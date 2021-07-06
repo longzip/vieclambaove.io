@@ -1,17 +1,21 @@
+const publicPath = 'https://vieclambaove.ga'
+const base = '/'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  router: {
+    base,
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'vieclambaove.io',
+    title: 'Việc làm bảo vệ | Tuyển dụng Công ty dịch vụ bảo vệ Chuyên Nghiệp - Uy tín',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'vi'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Bạn đang Tìm việc làm bảo vệ tại công ty dịch vụ bảo vệ chuyên nghiệp - uy tín. Hãy nhắn tin để nhận lịch phỏng vấn đi làm ngay hôm nay.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -33,7 +37,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    // '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -41,6 +46,8 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: { publicPath },
+  generate: {
+    dir: 'docs',
+  },
 }

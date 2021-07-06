@@ -23,10 +23,5 @@ export default {
     CtaCompoment,
     FormCompoment,
   },
-  data(){
-    return {
-      isOpen: false
-    }
-  }
 }
 </script>

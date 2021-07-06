@@ -1,5 +1,5 @@
-const publicPath = 'https://vieclambaove.ga'
-const base = '/'
+const publicPath = 'https://longzip.github.io/vieclambaove.io/'
+const base = '/vieclambaove.io/'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -37,7 +37,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    // '@nuxtjs/eslint-module',
+    '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
   ],
 
